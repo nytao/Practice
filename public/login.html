@@ -1,0 +1,19 @@
+<div>
+    <form class="form-inline" ng-show="! username">
+        <div class="form-group">
+            <label>User Name</label>
+            <input class="form-control" type="text" ng-model="user.name">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input class="form-control" type="password" ng-model="user.password">
+        </div>
+        
+        <button ng-click="singup(user)">Sign up</button>
+        <button ng-click="login(user)">Login</button>
+
+    </form>
+    <div ng-show="!! username">Welcome, {{username}} <button ng-click="logout()">Logout</button></div>
+</div>
+
+
